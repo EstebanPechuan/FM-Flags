@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.filters {
+    width: 100%;
+    padding: 0 70px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px 20px;
+    box-shadow: 0 0 10px #0003;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.input svg {
+    font-size: 20px;
+    color: #0009;
+}
+
+.input input {
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.input input::placeholder {
+    color: #0009;
+}
+
+.filters select {
+    width: 100%;
+    max-width: 200px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #0003;
+    appearance: none;
+    color: #0009;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.filters option {
+    color: #000;
+}

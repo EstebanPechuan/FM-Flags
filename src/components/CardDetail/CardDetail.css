@@ -1,0 +1,57 @@
+.backArrow {
+    margin: 30px 0;
+    padding: 0 70px;
+    color: #111;
+}
+
+.backArrow a {
+    padding: 10px 20px;
+    box-shadow: 0 0 10px #0004;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 70px;
+    display: flex;
+    gap: 100px;
+}
+
+.flag {
+    width: 50%;
+}
+
+.flag img {
+    width: 100%;
+}
+
+.info {
+    width: 50%;
+    color: #000d;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h2 {
+    margin: 30px 0;
+    font-size: 30px;
+    color: #000;
+}
+
+.columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.info span {
+    color: #0009;
+}
+
+.borders {
+    margin: auto 0 30px;
+}
