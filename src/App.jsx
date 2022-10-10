@@ -5,7 +5,7 @@ import './App.css'
 import CardDetail from "./components/CardDetail/CardDetail";
 import CardContainer from './components/CardContainer/CardContainer';
 
-function App() {1
+function App() {
     const [loading, setLoading] = useState(true)
     const [dataApi, setDataApi] = useState([])
 
@@ -15,7 +15,9 @@ function App() {1
         .then(data => {
             setDataApi(data)
             setLoading(false)
+            // console.log(data);
         })
+
     }, [])
   
   return (
@@ -23,14 +25,15 @@ function App() {1
     'Cargando' :
 
     <div className="App">
-      <BrowserRouter>
-        <Header />
+      <Header />
+      <CardContainer datos={dataApi} />
 
+      {/* <BrowserRouter>
         <Routes>
-          <Route path="/" element={<CardContainer datos={dataApi} />} />
+          <Route path="/about" element={<CardContainer datos={dataApi} />} />
           <Route path="/:id" element={<CardDetail datos={dataApi} />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   )
 }
